@@ -1,8 +1,9 @@
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
 import factorial
-echo "# Factorial" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/rae-gif/Factorial.git
-git push -u origin main
+
+print(factorial(5))
